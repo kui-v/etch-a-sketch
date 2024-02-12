@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.gridcontainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gridcontainer>div {
+    border: 1px solid black;
+    height: 20px;
+    width: 20px;
+}
+
+.gridcontainer>div:nth-child(17n + 1) {
+    width: 100%;
+    border: 0;
+    height: 0;
+}
